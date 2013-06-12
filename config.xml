@@ -9,5 +9,5 @@
     <author href="https://www.myapp.org" email="my@app.org">myapp</author>
 
     <preference name="orientation" value="landscape" />
-
+		<preference name="fullscreen" value="true" />
 </widget>
