@@ -6,7 +6,7 @@ body{position: relative;margin:0px;padding:0px;width:1024px;height: 768px;}
 
 /* style pages */
 
-#page_start{background:url(../images/eadv_decoupe_Page_01.jpg) no-repeat;left:0px}
-#page_menu{background:url(../images/eadv_decoupe_Page_02.jpg) no-repeat;}
-#page_1{background:url(../images/eadv_decoupe_Page_03.jpg) no-repeat;}
+#page_start{background:url(../images/eadv_decoupe_Page_01.jpg) no-repeat;-webkit-background-size:1024px 768px; left:0px}
+#page_menu{background:url(../images/eadv_decoupe_Page_02.jpg) no-repeat;-webkit-background-size:1024px 768px;}
+#page_1{background:url(../images/eadv_decoupe_Page_03.jpg) no-repeat;-webkit-background-size:1024px 768px;}
 
