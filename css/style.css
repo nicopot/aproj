@@ -10,3 +10,9 @@ body{position: relative;margin:0px;padding:0px;width:1024px;height: 768px;}
 #page_menu{background:url(../images/eadv_decoupe_Page_02.jpg) no-repeat;-webkit-background-size:1024px 768px;}
 #page_1{background:url(../images/eadv_decoupe_Page_03.jpg) no-repeat;-webkit-background-size:1024px 768px;}
 
+/* Page menu */
+#bloc_menu_1,#bloc_menu_2,#bloc_menu_3,#bloc_menu_4{-webkit-backface-visibility: hidden;-webkit-transition: translate3d(0,0,0);-webkit-transition-duration: 0.3s;-webkit-transition-timing-function: ease-out;transition-property: margin-left;}
+#bloc_menu_1{position:absolute;top:263px;left:-1024px;background:url(../images/menu_01.jpg) no-repeat;-webkit-background-size:1024px 102px;width:1024px;height:102px}
+#bloc_menu_2{position:absolute;top:365px;left:-1024px;background:url(../images/menu_02.jpg) no-repeat;-webkit-background-size:1024px 102px;width:1024px;height:102px}
+#bloc_menu_3{position:absolute;top:467px;left:-1024px;background:url(../images/menu_03.jpg) no-repeat;-webkit-background-size:1024px 102px;width:1024px;height:102px}
+#bloc_menu_4{position:absolute;top:569px;left:-1024px;background:url(../images/menu_04.jpg) no-repeat;-webkit-background-size:1024px 102px;width:1024px;height:102px}
