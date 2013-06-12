@@ -1,0 +1,12 @@
+body{position: relative;margin:0px;padding:0px;width:2048px;height: 1536px;}
+
+/* style generique */
+
+.page{position:absolute;top:0px;left:2048px;width:2048px;height: 1536px;-webkit-transform: translate3d(0, 0, 0);-webkit-backface-visibility: hidden;-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;}
+
+/* style pages */
+
+#page_start{background:url(../images/eadv_decoupe_Page_01.jpg) no-repeat;left:0px}
+#page_menu{background:url(../images/eadv_decoupe_Page_02.jpg) no-repeat;}
+#page_1{background:url(../images/eadv_decoupe_Page_03.jpg) no-repeat;}
+
