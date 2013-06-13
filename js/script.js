@@ -43,7 +43,7 @@ $('#page_oesclim_bonusage_5').swipe({swipeRight:function(event, direction, dista
 
 $('#page_accueil_oesclim_duphaston').swipe({swipeLeft:function(event, direction, distance, duration, fingerCount) {$(this).transition({x:'-2048px'});$('#page_oesclim_duphaston_1').transition({x:'-1024px'});},threshold:0});
 $('#page_oesclim_duphaston_1').swipe({swipeLeft:function(event, direction, distance, duration, fingerCount) {$(this).transition({x:'-2048px'});$('#page_oesclim_duphaston_2').transition({x:'-1024px'});},threshold:0});
-$('#page_oesclim_duphaston_2').swipe({swipeRight:function(event, direction, distance, duration, fingerCount) {$(this).transition({x:'1024px'});$('#page_oesclim_duphaston_1').transition({x:'0px'});},threshold:0});
+$('#page_oesclim_duphaston_2').swipe({swipeRight:function(event, direction, distance, duration, fingerCount) {$(this).transition({x:'0px'});$('#page_oesclim_duphaston_1').transition({x:'-1024px'});},threshold:0});
 
 $('#page_6').swipe({swipeLeft:function(event, direction, distance, duration, fingerCount) {$(this).transition({x:'-2048px'});$('#page_7').transition({x:'-1024px'});},threshold:0});
 
@@ -77,6 +77,7 @@ $('.bt_home_first_level').bind('touchstart',function(){$(this).parent().css({x:'
 $('.bt_home_second_level_1').bind('touchstart',function(){$(this).parent().transition({x:'1024px'},function(){setTimeout(init_pos_pages, 600);});$('#page_menu').transition({x:'-1024px'});});
 $('.bt_home_duphaston').bind('touchstart',function(){$('#page_accueil_duphaston').transition({x:'0px'},function(){$('#page_duphaston_1').transition({x:'0px'});});$('#page_menu').transition({x:'-1024px'});});
 $('.bt_home_oesclim').bind('touchstart',function(){$('#page_accueil_oesclim').transition({x:'0px'},function(){$('#page_oesclim_1').transition({x:'0px'});});$('#page_menu').transition({x:'-1024px'});});
+$('.bt_home_oesclim_duphaston').bind('touchstart',function(){$('#page_accueil_oesclim_duphaston').transition({x:'0px'},function(){$('#page_oesclim_duphaston_1').transition({x:'0px'});});$('#page_menu').transition({x:'-1024px'});});
 
 
 $('#bt_menu_1').bind('touchstart',function(){
@@ -105,7 +106,12 @@ $('#bt_menu_3').bind('touchstart',function(){
 	$('#page_accueil_oesclim').transition({x:'-1024px'});
 });
 
-$('#bt_menu_4').bind('touchstart',function(){$('#page_menu').transition({x:'-2048px'});$('#page_accueil_oesclim_duphaston').transition({x:'-1024px'});});
+$('#bt_menu_4').bind('touchstart',function(){
+	$('#page_oesclim_duphaston_1').css('background-image','url(./images/eadv_decoupe_Page_25_light.jpg)');
+	$('#page_oesclim_duphaston_2').css('background-image','url(./images/eadv_decoupe_Page_26_light.jpg)');
+	$('#page_menu').transition({x:'-2048px'});
+	$('#page_accueil_oesclim_duphaston').transition({x:'-1024px'});
+});
 
 $('#bt_backup_duphaston').bind('touchstart',function(){$('#page_duphaston_1').transition({x:'-2048px'});$('#page_duphaston_backup').transition({x:'-1024px'});});
 $('#bt_bonusage_duphaston').bind('touchstart',function(){$('#page_duphaston_1').transition({x:'-2048px'});$('#page_duphaston_bonusage').transition({x:'-1024px'});});
