@@ -20,7 +20,7 @@ $('#page_accueil_duphaston').swipe({swipeLeft:function(event, direction, distanc
 
 $('#page_accueil_climaston').swipe({swipeLeft:function(event, direction, distance, duration, fingerCount) {
 	$(this).transition({x:'-2048px'});
-	$('#page_6').transition({x:'-1024px'});},threshold:0
+	$('#page_climaston_1').transition({x:'-1024px'});},threshold:0
 });
 $('#page_accueil_oesclim').swipe({swipeLeft:function(event, direction, distance, duration, fingerCount) {$(this).transition({x:'-2048px'});$('#page_oesclim_1').transition({x:'-1024px'});},threshold:0});
 $('#page_oesclim_bonusage_1').swipe({swipeLeft:function(event, direction, distance, duration, fingerCount) {$(this).transition({x:'-2048px'});$('#page_oesclim_bonusage_2').transition({x:'-1024px'});},threshold:0});
@@ -45,7 +45,7 @@ $('#page_accueil_oesclim_duphaston').swipe({swipeLeft:function(event, direction,
 $('#page_oesclim_duphaston_1').swipe({swipeLeft:function(event, direction, distance, duration, fingerCount) {$(this).transition({x:'-2048px'});$('#page_oesclim_duphaston_2').transition({x:'-1024px'});},threshold:0});
 $('#page_oesclim_duphaston_2').swipe({swipeRight:function(event, direction, distance, duration, fingerCount) {$(this).transition({x:'0px'});$('#page_oesclim_duphaston_1').transition({x:'-1024px'});},threshold:0});
 
-$('#page_6').swipe({swipeLeft:function(event, direction, distance, duration, fingerCount) {$(this).transition({x:'-2048px'});$('#page_7').transition({x:'-1024px'});},threshold:0});
+$('#page_climaston_1').swipe({swipeLeft:function(event, direction, distance, duration, fingerCount) {$(this).transition({x:'-2048px'});$('#page_climaston_2').transition({x:'-1024px'});},threshold:0});
 
 
 
@@ -78,6 +78,8 @@ $('.bt_home_second_level_1').bind('touchstart',function(){$(this).parent().trans
 $('.bt_home_duphaston').bind('touchstart',function(){$('#page_accueil_duphaston').transition({x:'0px'},function(){$('#page_duphaston_1').transition({x:'0px'});});$('#page_menu').transition({x:'-1024px'});});
 $('.bt_home_oesclim').bind('touchstart',function(){$('#page_accueil_oesclim').transition({x:'0px'},function(){$('#page_oesclim_1').transition({x:'0px'});});$('#page_menu').transition({x:'-1024px'});});
 $('.bt_home_oesclim_duphaston').bind('touchstart',function(){$('#page_accueil_oesclim_duphaston').transition({x:'0px'},function(){$('#page_oesclim_duphaston_1').transition({x:'0px'});});$('#page_menu').transition({x:'-1024px'});});
+$('.bt_home_climaston_1').bind('touchstart',function(){$('#page_accueil_climaston').transition({x:'0px'},function(){$('#page_climaston_1').transition({x:'0px'});});$('#page_menu').transition({x:'-1024px'});});
+$('.bt_home_climaston_2').bind('touchstart',function(){$('#page_accueil_climaston').transition({x:'0px'},function(){$('#page_climaston_1,#page_climaston_2').transition({x:'0px'});});$('#page_menu').transition({x:'-1024px'});});
 
 
 $('#bt_menu_1').bind('touchstart',function(){
@@ -90,6 +92,9 @@ $('#bt_menu_1').bind('touchstart',function(){
 });
 
 $('#bt_menu_2').bind('touchstart',function(){
+  $('#page_climaston_1').css('background-image','url(./images/eadv_decoupe_Page_08_light.jpg)');
+  $('#page_climaston_2').css('background-image','url(./images/eadv_decoupe_Page_09_light.jpg)');
+  $('#page_climaston_backup_1,#page_climaston_backup_2').css('background-image','url(./images/eadv_decoupe_Page_10_light.jpg)');
 	$('#page_menu').transition({x:'-2048px'});
 	$('#page_accueil_climaston').transition({x:'-1024px'});
 });
@@ -119,7 +124,8 @@ $('#bt_bonusage_duphaston').bind('touchstart',function(){$('#page_duphaston_1').
 $('#bt_backup_oesclim').bind('touchstart',function(){$('#page_oesclim_1').transition({x:'-2048px'});$('#page_oesclim_backup').transition({x:'-1024px'});});
 $('#bt_bonusage_oesclim').bind('touchstart',function(){$('#page_oesclim_1').transition({x:'-2048px'});$('#page_oesclim_bonusage_1').transition({x:'-1024px'});});
 
-$('#bt_backup_2').bind('touchstart',function(){$('#page_6').transition({x:'-2048px'});$('#page_8').transition({x:'-1024px'});});
+$('#bt_backup_2').bind('touchstart',function(){$('#page_climaston_1').transition({x:'-2048px'});$('#page_climaston_backup_1').transition({x:'-1024px'});});
+$('#bt_backup_3').bind('touchstart',function(){$('#page_climaston_2').transition({x:'-2048px'});$('#page_climaston_backup_2').transition({x:'-1024px'});});
 
 $('#retour_2').bind('touchstart',function(){$('#page_duphaston_1').css({x:'-1024px'});$('#page_duphaston_bonusage').css({x:'+1024px'});});
 $('#retour_1').bind('touchstart',function(){$('#page_duphaston_1').css({x:'-1024px'});$('#page_duphaston_backup').css({x:'+1024px'});});
@@ -133,5 +139,9 @@ $('#retour_6_3').bind('touchstart',function(){$('#page_oesclim_bonusage_2').tran
 $('#retour_6_4').bind('touchstart',function(){$('#page_oesclim_bonusage_3').transition({x:'-1024px'});$(this).parent().transition({x:'0px'});});
 $('#retour_6_5').bind('touchstart',function(){$('#page_oesclim_bonusage_4').transition({x:'-1024px'});$(this).parent().transition({x:'0px'});});
 
+$('.bt_retour_climaston_1').on('touchstart',function(){$('#page_climaston_1').transition({x:'-1024px'});$('#page_climaston_backup_1').transition({x:'0px'});});
+$('.bt_retour_climaston_2').on('touchstart',function(){$('#page_climaston_2').transition({x:'-1024px'});$('#page_climaston_backup_2').transition({x:'0px'});});
+
+$('.bt_retour_climaston').on('touchstart',function(){alert($(this).attr("class"));});
 	
 });

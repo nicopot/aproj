@@ -13,6 +13,9 @@ body{position: relative;margin:0px;padding:0px;width:1024px;height: 768px;}
 #page_duphaston_backup{-webkit-background-size:1024px 768px;}
 #page_duphaston_bonusage{-webkit-background-size:1024px 768px;}
 #page_accueil_climaston{-webkit-background-size:1024px 768px;}
+#page_climaston_1{-webkit-background-size:1024px 768px;}
+#page_climaston_2{-webkit-background-size:1024px 768px;}
+#page_climaston_backup_1,#page_climaston_backup_2{-webkit-background-size:1024px 768px;}
 #page_accueil_oesclim{-webkit-background-size:1024px 768px;}
 #page_oesclim_1{-webkit-background-size:1024px 768px;}
 #page_oesclim_backup{-webkit-background-size:1024px 768px;}
@@ -37,6 +40,6 @@ body{position: relative;margin:0px;padding:0px;width:1024px;height: 768px;}
 .bt_backup{position:absolute;top:615px;left:565px;display:block;background:url(../images/back_up_off.png) no-repeat;-webkit-background-size:147px 52px;width:147px;height:52px;cursor:pointer}
 .bt_bonusage{position:absolute;top:615px;left:725px;display:block;background:url(../images/usage_off.png) no-repeat;-webkit-background-size:147px 52px;width:147px;height:52px;cursor:pointer}
 .bt_retour{position:absolute;top:700px;left:20px;display:block;background:url(../images/retour_off.png) no-repeat;-webkit-background-size:60px 60px;width:60px;height:60px;cursor:pointer}
-
+.bt_retour_climaston_1{position:absolute;top:700px;left:10px;display:block;background:url(../images/retour_off.png) no-repeat;-webkit-background-size:60px 60px;width:60px;height:60px;cursor:pointer}
 
 #bt_menu_1,#bt_menu_2,#bt_menu_3,#bt_menu_4{margin-top:20px;margin-left:880px}
