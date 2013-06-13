@@ -7,9 +7,13 @@ body{position: relative;margin:0px;padding:0px;width:1024px;height: 768px;}
 /* style pages */
 
 #page_start{display:block;background:url(../images/eadv_decoupe_Page_01_light.jpg) no-repeat; left:0px;-webkit-background-size:1024px 768px;}
-#page_menu{z-index:40;-webkit-background-size:1024px 768px;}
+#page_menu{z-index:40;background:url(../images/eadv_decoupe_Page_02_light.jpg) no-repeat;-webkit-background-size:1024px 768px;}
 #page_accueil_duphaston{-webkit-background-size:1024px 768px;}
-
+#page_duphaston_backup{-webkit-background-size:1024px 768px;}
+#page_duphaston_bonusage{-webkit-background-size:1024px 768px;}
+#page_accueil_climaston{-webkit-background-size:1024px 768px;}
+#page_accueil_oesclim{-webkit-background-size:1024px 768px;}
+#page_accueil_oesclim_duphaston{-webkit-background-size:1024px 768px;}
 
 
 /* Page menu */
