@@ -6,28 +6,10 @@ body{position: relative;margin:0px;padding:0px;width:1024px;height: 768px;}
 
 /* style pages */
 
-#page_start{display:block;background:url(../images/eadv_decoupe_Page_01_light.jpg) no-repeat;-webkit-background-size:1024px 768px; left:0px}
-#page_menu{z-index:40;background:url(../images/eadv_decoupe_Page_02_light.jpg) no-repeat;-webkit-background-size:1024px 768px;}
-#page_accueil_duphaston{background:url(../images/eadv_decoupe_Page_03_light.jpg) no-repeat;-webkit-background-size:1024px 768px;}
-#page_duphaston_1{background:url(../images/eadv_decoupe_Page_04_light.jpg) no-repeat;-webkit-background-size:1024px 768px;}
-#page_duphaston_backup{background:url(../images/eadv_decoupe_Page_05_light.jpg) no-repeat;-webkit-background-size:1024px 768px;}
-#page_duphaston_bonusage{background:url(../images/eadv_decoupe_Page_06_light.jpg) no-repeat;-webkit-background-size:1024px 768px;}
-#page_accueil_climaston{background:url(../images/eadv_decoupe_Page_07_light.jpg) no-repeat;-webkit-background-size:1024px 768px;}
-#page_6{background:url(../images/eadv_decoupe_Page_08_light.jpg) no-repeat;-webkit-background-size:1024px 768px;}
-#page_7{background:url(../images/eadv_decoupe_Page_09_light.jpg) no-repeat;-webkit-background-size:1024px 768px;}
-#page_8{background:url(../images/eadv_decoupe_Page_10_light.jpg) no-repeat;-webkit-background-size:1024px 768px;}
-#page_accueil_oesclim{background:url(../images/eadv_decoupe_Page_16_light.jpg) no-repeat;-webkit-background-size:1024px 768px;}
-#page_oesclim_1{background:url(../images/eadv_decoupe_Page_17_light.jpg) no-repeat;-webkit-background-size:1024px 768px;}
-#page_oesclim_backup{background:url(../images/eadv_decoupe_Page_18_light.jpg) no-repeat;-webkit-background-size:1024px 768px;}
-#page_oesclim_bonusage_1{background:url(../images/eadv_decoupe_Page_19_light.jpg) no-repeat;-webkit-background-size:1024px 768px;}
-#page_oesclim_bonusage_2{background:url(../images/eadv_decoupe_Page_20_light.jpg) no-repeat;-webkit-background-size:1024px 768px;}
-#page_oesclim_bonusage_3{background:url(../images/eadv_decoupe_Page_21_light.jpg) no-repeat;-webkit-background-size:1024px 768px;}
-#page_oesclim_bonusage_4{background:url(../images/eadv_decoupe_Page_22_light.jpg) no-repeat;-webkit-background-size:1024px 768px;}
-#page_oesclim_bonusage_5{background:url(../images/eadv_decoupe_Page_23_light.jpg) no-repeat;-webkit-background-size:1024px 768px;}
+#page_start{display:block;background:url(../images/eadv_decoupe_Page_01_light.jpg) no-repeat; left:0px;-webkit-background-size:1024px 768px;}
+#page_menu{z-index:40;-webkit-background-size:1024px 768px;}
+#page_accueil_duphaston{-webkit-background-size:1024px 768px;}
 
-#page_accueil_oesclim_duphaston{background:url(../images/eadv_decoupe_Page_24_light.jpg) no-repeat;-webkit-background-size:1024px 768px;}
-#page_oesclim_duphaston_1{background:url(../images/eadv_decoupe_Page_25_light.jpg) no-repeat;-webkit-background-size:1024px 768px;}
-#page_oesclim_duphaston_2{background:url(../images/eadv_decoupe_Page_26_light.jpg) no-repeat;-webkit-background-size:1024px 768px;}
 
 
 /* Page menu */
