@@ -4,9 +4,9 @@
         id        = "com.myapp"
         version   = "1.0.0">
 
-    <name>myapplication</name>
+    <name>Abbot gynécologie</name>
     <description>myapplication</description>
-    <author href="https://www.myapp.org" email="my@app.org">myapp</author>
+    <author >Elwood / Abbott gynécologie</author>
 
     <preference name="orientation" value="landscape" />
 		<preference name="fullscreen" value="true" />
