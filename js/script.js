@@ -12,8 +12,16 @@ $('#page_start').swipe({swipeLeft:function(event, direction, distance, duration,
 });
 
 $('#page_menu').swipe({swipeRight:function(event, direction, distance, duration, fingerCount) {$(this).transition({x:'1024px'});;$('#page_start').transition({x:'0px'});},threshold:0});
-$('#page_accueil_duphaston').swipe({swipeLeft:function(event, direction, distance, duration, fingerCount) {$(this).transition({x:'-2048px'});$('#page_duphaston_1').transition({x:'-1024px'});},threshold:0});
-$('#page_accueil_climaston').swipe({swipeLeft:function(event, direction, distance, duration, fingerCount) {$(this).transition({x:'-2048px'});$('#page_6').transition({x:'-1024px'});},threshold:0});
+
+$('#page_accueil_duphaston').swipe({swipeLeft:function(event, direction, distance, duration, fingerCount) {
+	$(this).transition({x:'-2048px'});
+	$('#page_duphaston_1').transition({x:'-1024px'});},threshold:0
+});
+
+$('#page_accueil_climaston').swipe({swipeLeft:function(event, direction, distance, duration, fingerCount) {
+	$(this).transition({x:'-2048px'});
+	$('#page_6').transition({x:'-1024px'});},threshold:0
+});
 $('#page_accueil_oesclim').swipe({swipeLeft:function(event, direction, distance, duration, fingerCount) {$(this).transition({x:'-2048px'});$('#page_oesclim_1').transition({x:'-1024px'});},threshold:0});
 $('#page_oesclim_bonusage_1').swipe({swipeLeft:function(event, direction, distance, duration, fingerCount) {$(this).transition({x:'-2048px'});$('#page_oesclim_bonusage_2').transition({x:'-1024px'});},threshold:0});
 $('#page_oesclim_bonusage_2').swipe(
@@ -43,7 +51,6 @@ $('#page_6').swipe({swipeLeft:function(event, direction, distance, duration, fin
 
 $('#page_menu').on('webkitTransitionEnd',
 function() {
- 
  $('#bloc_menu_1').show().transition({x:'1024px'});  
 $('#bloc_menu_1').on('webkitTransitionEnd', 
 function() {
@@ -73,9 +80,31 @@ $('.bt_home_oesclim').bind('touchstart',function(){$('#page_accueil_oesclim').tr
 
 
 $('#bt_menu_1').bind('touchstart',function(){
-	$('#page_menu').transition({x:'-2048px'});$('#page_accueil_duphaston').transition({x:'-1024px'});});
-$('#bt_menu_2').bind('touchstart',function(){$('#page_menu').transition({x:'-2048px'});$('#page_accueil_climaston').transition({x:'-1024px'});});
-$('#bt_menu_3').bind('touchstart',function(){$('#page_menu').transition({x:'-2048px'});$('#page_accueil_oesclim').transition({x:'-1024px'});});
+
+  $('#page_duphaston_1').css('background-image','url(./images/eadv_decoupe_Page_04_light.jpg)');
+  $('#page_duphaston_backup').css('background-image','url(./images/eadv_decoupe_Page_05_light.jpg)');
+  $('#page_duphaston_bonusage').css('background-image','url(./images/eadv_decoupe_Page_06_light.jpg)'); 	
+	$('#page_menu').transition({x:'-2048px'});
+	$('#page_accueil_duphaston').transition({x:'-1024px'});
+});
+
+$('#bt_menu_2').bind('touchstart',function(){
+	$('#page_menu').transition({x:'-2048px'});
+	$('#page_accueil_climaston').transition({x:'-1024px'});
+});
+
+$('#bt_menu_3').bind('touchstart',function(){
+	$('#page_oesclim_1').css('background-image','url(./images/eadv_decoupe_Page_17_light.jpg)');
+	$('#page_oesclim_backup').css('background-image','url(./images/eadv_decoupe_Page_18_light.jpg)');
+	$('#page_oesclim_bonusage_1').css('background-image','url(./images/eadv_decoupe_Page_19_light.jpg)');
+	$('#page_oesclim_bonusage_2').css('background-image','url(./images/eadv_decoupe_Page_20_light.jpg)');	
+	$('#page_oesclim_bonusage_3').css('background-image','url(./images/eadv_decoupe_Page_21_light.jpg)');	
+	$('#page_oesclim_bonusage_4').css('background-image','url(./images/eadv_decoupe_Page_22_light.jpg)');	
+	$('#page_oesclim_bonusage_5').css('background-image','url(./images/eadv_decoupe_Page_23_light.jpg)');	
+	$('#page_menu').transition({x:'-2048px'});
+	$('#page_accueil_oesclim').transition({x:'-1024px'});
+});
+
 $('#bt_menu_4').bind('touchstart',function(){$('#page_menu').transition({x:'-2048px'});$('#page_accueil_oesclim_duphaston').transition({x:'-1024px'});});
 
 $('#bt_backup_duphaston').bind('touchstart',function(){$('#page_duphaston_1').transition({x:'-2048px'});$('#page_duphaston_backup').transition({x:'-1024px'});});
