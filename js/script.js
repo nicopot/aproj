@@ -91,10 +91,3 @@ $('#retour_6_5').bind('touchstart',function(){$('#page_oesclim_bonusage_4').tran
 
 	
 });
-
-function init_pos_pages()
-{
-//alert($('#page_1').css('left'));
-//$('#page_1,#page_2,#page_3,#page_4,#page_5,#page_6,#page_7').hide().css('x','1024px');
-//$('#page_accueil_duphaston,#page_2,#page_3,#page_4,#page_5,#page_6,#page_7').transition({x:'0px'});		
-}
