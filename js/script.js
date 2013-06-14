@@ -1,5 +1,5 @@
 $(document).ready(function() {	
-
+document.getElementById("Video_start").play();
 $('body').on('touchmove', function(evt) { evt.preventDefault(); })
 
 $('#page_start').swipe({swipeLeft:function(event, direction, distance, duration, fingerCount) {	
