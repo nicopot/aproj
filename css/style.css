@@ -2,7 +2,7 @@ body{position: relative;margin:0px;padding:0px;width:1024px;height: 768px;}
 
 /* style generique */
 
-.page{position:absolute;top:0px;left:1024px;width:1024px;height: 768px;-webkit-transform: translate3d(0, 0, 0);-webkit-backface-visibility: hidden;-webkit-transition:all 0.3s ease-in-out;}
+.page{position:absolute;top:0px;left:1024px;width:1024px;height: 768px;-webkit-backface-visibility: hidden;-webkit-transition:all 0.3s ease-in-out;}
 
 /* style pages */
 
