@@ -131,7 +131,7 @@ $('#retour_2').bind('touchstart',function(){$('#page_duphaston_1').css({x:'-1024
 $('#retour_1').bind('touchstart',function(){$('#page_duphaston_1').css({x:'-1024px'});$('#page_duphaston_backup').css({x:'+1024px'});});
 $('#retour_3').bind('touchstart',function(){$('#page_6').transition({x:'-1024px'});$('#page_8').transition({x:'1024px'});});
 
-$('#retour_5').bind('touchstart',function(){$('#page_oesclim_1').css({x:'-1024px'});$('#page_oesclim_backup').transition({css:'0px'});});
+$('#retour_5').bind('touchstart',function(){$('#page_oesclim_1').css({x:'-1024px'});$('#page_oesclim_backup').css({css:'0px'});});
 
 $('#retour_6_1').bind('touchstart',function(){$('#page_oesclim_1').css({x:'-1024px'});$(this).parent().css({x:'0px'});});
 $('#retour_6_2').bind('touchstart',function(){$('#page_oesclim_bonusage_1').css({x:'-1024px'});$(this).parent().css({x:'0px'});});
