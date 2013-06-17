@@ -46,6 +46,7 @@ $('#page_oesclim_duphaston_1').swipe({swipeLeft:function(event, direction, dista
 $('#page_oesclim_duphaston_2').swipe({swipeRight:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'0px'});$('#page_oesclim_duphaston_1').css({x:'-1024px'});},threshold:0});
 
 $('#page_climaston_1').swipe({swipeLeft:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'-2048px'});$('#page_climaston_2').css({x:'-1024px'});},threshold:0});
+$('#page_climaston_2').swipe({swipeRight:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'0px'});$('#page_climaston_1').css({x:'-1024px'});},threshold:0});
 
 $('#page_climaston_bonusage_1').swipe({swipeLeft:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'-2048px'});$('#page_climaston_bonusage_2').css({x:'-1024px'});},threshold:0});
 $('#page_climaston_bonusage_2').swipe(
@@ -99,7 +100,7 @@ $('.bt_home_climaston_1').bind('touchstart',function(){$('#page_accueil_climasto
 $('.bt_home_climaston_2').bind('touchstart',function(){$('#page_accueil_climaston').transition({x:'0px'},function(){$('#page_climaston_1,#page_climaston_2').css({x:'0px'});});$('#page_menu').css({x:'-1024px'});});
 
 
-$('#bt_menu_1').bind('touchstart',function(){
+$('#bt_menu_1').bind('touchend',function(){
 
 	$('#page_menu').css({x:'-2048px'});
 	$('#page_accueil_duphaston').css({x:'-1024px'});
@@ -108,7 +109,7 @@ $('#bt_menu_1').bind('touchstart',function(){
   $('#page_duphaston_bonusage').css('background-image','url(./images/eadv_decoupe_Page_06_light.jpg)'); 	
 });
 
-$('#bt_menu_2').bind('touchstart',function(){
+$('#bt_menu_2').bind('touchend',function(){
   $('#page_climaston_1').css('background-image','url(./images/eadv_decoupe_Page_08_light.jpg)');
   $('#page_climaston_2').css('background-image','url(./images/eadv_decoupe_Page_09_light.jpg)');
   $('#page_climaston_backup_1,#page_climaston_backup_2').css('background-image','url(./images/eadv_decoupe_Page_10_light.jpg)');
@@ -121,7 +122,7 @@ $('#bt_menu_2').bind('touchstart',function(){
 	$('#page_accueil_climaston').css({x:'-1024px'});
 });
 
-$('#bt_menu_3').bind('touchstart',function(){
+$('#bt_menu_3').bind('touchend',function(){
 	$('#page_oesclim_1').css('background-image','url(./images/eadv_decoupe_Page_17_light.jpg)');
 	$('#page_oesclim_backup').css('background-image','url(./images/eadv_decoupe_Page_18_light.jpg)');
 	$('#page_oesclim_bonusage_1').css('background-image','url(./images/eadv_decoupe_Page_19_light.jpg)');
@@ -133,7 +134,7 @@ $('#bt_menu_3').bind('touchstart',function(){
 	$('#page_accueil_oesclim').css({x:'-1024px'});
 });
 
-$('#bt_menu_4').bind('touchstart',function(){
+$('#bt_menu_4').bind('touchend',function(){
 	$('#page_oesclim_duphaston_1').css('background-image','url(./images/eadv_decoupe_Page_25_light.jpg)');
 	$('#page_oesclim_duphaston_2').css('background-image','url(./images/eadv_decoupe_Page_26_light.jpg)');
 	$('#page_menu').css({x:'-2048px'});
