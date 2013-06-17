@@ -11,7 +11,7 @@ $('#page_start').swipe({swipeLeft:function(event, direction, distance, duration,
 	$('#page_menu').css({x:'-1024px'});},threshold:0
 });
 
-$('#page_menu').swipe({swipeRight:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'1024px'});;$('#page_start').css({x:'0px'});},threshold:0});
+$('#page_menu').swipe({swipeRight:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'1024px'});$('#page_start').transition({x:'0px'},function(){document.getElementById("Video_start").play();});},threshold:0});
 
 $('#page_accueil_duphaston').swipe({swipeLeft:function(event, direction, distance, duration, fingerCount) {
 	$(this).css({x:'-2048px'});
