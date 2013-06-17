@@ -177,25 +177,3 @@ $('.bt_retour_climaston_2').on('touchstart',function(){$('#page_climaston_2').cs
 $('.bt_retour_climaston').on('touchstart',function(){alert($(this).attr("class"));});
 	
 });
-
-function changeOrientation() {
-    switch (window.orientation) {
-        case 0:
-            // portrait, home bottom
-        case 180:
-            // portrait, home top
-            alert("portrait H: " + $(window).height() + " W: " + $(window).width());
-            break;
-        case -90:
-            // landscape, home left
-        case 90:
-            // landscape, home right
-            alert("landscape H: " + $(window).height() + " W: " + $(window).width());
-            break;
-    }
-}
-
-window.onorientationchange = function () {
-    //Need at least 800 milliseconds
-    setTimeout(changeOrientation, 100);
-}
