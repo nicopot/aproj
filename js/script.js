@@ -3,11 +3,12 @@ document.getElementById("Video_start").play();
 $('body').on('touchmove', function(evt) { evt.preventDefault(); })
 
 $('#page_start').swipe({swipeLeft:function(event, direction, distance, duration, fingerCount) {	
+	
 	$('#page_accueil_duphaston').css('background-image','url(./images/eadv_decoupe_Page_03_light.jpg)');
 	$('#page_accueil_oesclim').css('background-image','url(./images/eadv_decoupe_Page_16_light.jpg)');
 	$('#page_accueil_climaston').css('background-image','url(./images/eadv_decoupe_Page_07_light.jpg)');
-	$('#page_accueil_oesclim_duphaston').css('background-image','url(./images/eadv_decoupe_Page_24_light.jpg)');
-	$(this).css({x:'-1024px'});$('#page_menu').show();
+	$('#page_accueil_oesclim_duphaston').css('background-image','url(./images/eadv_decoupe_Page_24_light.jpg)');	
+	$(this).css({x:'-1024px'});$('#Video_start').hide();$(this).css('background-image','url(./images/eadv_decoupe_Page_01_light.jpg)');$('#page_menu').show();
 	$('#page_menu').css({x:'-1024px'});},threshold:0
 });
 
@@ -32,6 +33,13 @@ $('#page_accueil_oesclim').swipe(
 		swipeRight:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'0px'});$('#page_menu').css({x:'-1024px'});},
 		threshold:0});
 
+$('#page_oesclim_1').swipe(
+	{		
+		swipeRight:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'0px'});$('#page_accueil_oesclim').css({x:'-1024px'});},
+		threshold:0}
+	);
+
+
 $('#page_oesclim_bonusage_1').swipe({swipeLeft:function(event, direction, distance, duration, fingerCount) {
 		$('#page_oesclim_bonusage_3').css('background-image','url(./images/eadv_decoupe_Page_21_light.jpg)');	
 	$(this).css({x:'-2048px'});$('#page_oesclim_bonusage_2').css({x:'-1024px'});},threshold:0});
@@ -49,6 +57,10 @@ $('#page_oesclim_bonusage_3').swipe(
   	$(this).css({x:'-2048px'});$('#page_oesclim_bonusage_4').css({x:'-1024px'});},
   	swipeRight:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'0px'});$('#page_oesclim_bonusage_2').css({x:'-1024px'});},
   	threshold:0});
+$('#page_duphaston_1').swipe(
+  {
+  	swipeRight:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'0px'});$('#page_accueil_duphaston').css({x:'-1024px'});},
+  	threshold:0});  	
 $('#page_oesclim_bonusage_4').swipe(
 	{
 		swipeLeft:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'-2048px'});$('#page_oesclim_bonusage_5').css({x:'-1024px'});},
@@ -61,11 +73,18 @@ $('#page_accueil_oesclim_duphaston').swipe(
  	swipeLeft:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'-2048px'});$('#page_oesclim_duphaston_1').css({x:'-1024px'});},
   swipeRight:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'0px'});$('#page_menu').css({x:'-1024px'});},
  	threshold:0});
-$('#page_oesclim_duphaston_1').swipe({swipeLeft:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'-2048px'});$('#page_oesclim_duphaston_2').css({x:'-1024px'});},threshold:0});
+$('#page_oesclim_duphaston_1').swipe(
+	{
+	 swipeLeft:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'-2048px'});$('#page_oesclim_duphaston_2').css({x:'-1024px'});},	 
+	 swipeRight:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'0px'});$('#page_accueil_oesclim_duphaston').css({x:'-1024px'});},
+	 threshold:0});
 $('#page_oesclim_duphaston_2').swipe({swipeRight:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'0px'});$('#page_oesclim_duphaston_1').css({x:'-1024px'});},threshold:0});
 
-$('#page_climaston_1').swipe({swipeLeft:function(event, direction, distance, duration, fingerCount) {	
-  $(this).css({x:'-2048px'});$('#page_climaston_2').css({x:'-1024px'});},threshold:0});
+$('#page_climaston_1').swipe(
+  {
+  	swipeLeft:function(event, direction, distance, duration, fingerCount) {	$(this).css({x:'-2048px'});$('#page_climaston_2').css({x:'-1024px'});},
+  	swipeRight:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'0px'});$('#page_accueil_climaston').css({x:'-1024px'});},
+  	threshold:0});
 $('#page_climaston_2').swipe({swipeRight:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'0px'});$('#page_climaston_1').css({x:'-1024px'});},threshold:0});
 
 $('#page_climaston_bonusage_1').swipe({swipeLeft:function(event, direction, distance, duration, fingerCount) {
