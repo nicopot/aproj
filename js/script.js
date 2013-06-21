@@ -227,31 +227,29 @@ $('#bt_backup_3').bind('touchstart',function(){$('#page_climaston_2').css({x:'-2
 
 $('#bt_bonusage_2').bind('touchstart',function(){	
 	$('#page_climaston_bonusage_2').css('background-image','url(./images/eadv_decoupe_Page_12_light.jpg)');	
-	$('#page_climaston_1').css({x:'-2048px'});$('#retour_4_1').show();$('#retour_4_1_bis').hide();$('#page_climaston_bonusage_1').css({x:'-1024px'});});
+	$('#page_climaston_1').css({x:'-2048px'});$('.retour_4_1').show();$('.retour_4_1_bis').hide();$('#page_climaston_bonusage_1').css({x:'-1024px'});});
 $('#bt_bonusage_3').bind('touchstart',function(){
 	$('#page_climaston_bonusage_2').css('background-image','url(./images/eadv_decoupe_Page_12_light.jpg)');	
-	$('#page_climaston_bonusage_3').css('background-image','url(./images/eadv_decoupe_Page_13_light.jpg)');	
-	$('#page_climaston_bonusage_4').css('background-image','url(./images/eadv_decoupe_Page_14_light.jpg)');	
-	$('#page_climaston_bonusage_5').css('background-image','url(./images/eadv_decoupe_Page_15_light.jpg)');
-	$('#page_climaston_2').css({x:'-2048px'});$('#retour_4_1').hide();$('#retour_4_1_bis').show();$('#page_climaston_bonusage_1').css({x:'-1024px'});});
+	$('#page_climaston_2').css({x:'-2048px'});$('.retour_4_1').hide();$('.retour_4_1_bis').show();$('#page_climaston_bonusage_1').css({x:'-1024px'});});
 
 $('#retour_2').bind('touchstart',function(){$('#page_duphaston_1').css({x:'-1024px'});$('#page_duphaston_bonusage').css({x:'+1024px'});});
 $('#retour_1').bind('touchstart',function(){$('#page_duphaston_1').css({x:'-1024px'});$('#page_duphaston_backup').css({x:'+1024px'});});
 
 $('#retour_5').bind('touchstart',function(){$('#page_oesclim_1').css({x:'-1024px'});$('#page_oesclim_backup').css({x:'0px'});});
 
-$('#retour_6_1').bind('touchstart',function(){$('#page_oesclim_1').css({x:'-1024px'});$(this).parent().css({x:'0px'});});
-$('#retour_6_2').bind('touchstart',function(){$('#page_oesclim_bonusage_1').css({x:'-1024px'});$(this).parent().css({x:'0px'});});
-$('#retour_6_3').bind('touchstart',function(){$('#page_oesclim_bonusage_2').css({x:'-1024px'});$(this).parent().css({x:'0px'});});
-$('#retour_6_4').bind('touchstart',function(){$('#page_oesclim_bonusage_3').css({x:'-1024px'});$(this).parent().css({x:'0px'});});
-$('#retour_6_5').bind('touchstart',function(){$('#page_oesclim_bonusage_4').css({x:'-1024px'});$(this).parent().css({x:'0px'});});
+$('#retour_6_1,#retour_6_2,#retour_6_3,#retour_6_4,#retour_6_5').bind('touchstart',function(){$('#page_oesclim_1').css({x:'-1024px'});$('#page_oesclim_bonusage_1,#page_oesclim_bonusage_2,#page_oesclim_bonusage_3,#page_oesclim_bonusage_4,#page_oesclim_bonusage_5').css({x:'0px'});});
+//$('#retour_6_2').bind('touchstart',function(){$('#page_oesclim_bonusage_1').css({x:'-1024px'});$(this).parent().css({x:'0px'});});
+//$('#retour_6_3').bind('touchstart',function(){$('#page_oesclim_bonusage_2').css({x:'-1024px'});$(this).parent().css({x:'0px'});});
+//$('#retour_6_4').bind('touchstart',function(){$('#page_oesclim_bonusage_3').css({x:'-1024px'});$(this).parent().css({x:'0px'});});
+//$('#retour_6_5').bind('touchstart',function(){$('#page_oesclim_bonusage_4').css({x:'-1024px'});$(this).parent().css({x:'0px'});});
 
-$('#retour_4_1').bind('touchstart',function(){$('#page_climaston_1').css({x:'-1024px'});$(this).parent().css({x:'0px'});});
-$('#retour_4_1_bis').bind('touchstart',function(){$('#page_climaston_2').css({x:'-1024px'});$(this).parent().css({x:'0px'});});
-$('#retour_4_2').bind('touchstart',function(){$('#page_climaston_bonusage_1').css({x:'-1024px'});$(this).parent().css({x:'0px'});});
-$('#retour_4_3').bind('touchstart',function(){$('#page_climaston_bonusage_2').css({x:'-1024px'});$(this).parent().css({x:'0px'});});
-$('#retour_4_4').bind('touchstart',function(){$('#page_climaston_bonusage_3').css({x:'-1024px'});$(this).parent().css({x:'0px'});});
-$('#retour_4_5').bind('touchstart',function(){$('#page_climaston_bonusage_4').css({x:'-1024px'});$(this).parent().css({x:'0px'});});
+$('.retour_4_1').bind('touchstart',function(){$('#page_climaston_1').css({x:'-1024px'});$('#page_climaston_bonusage_1,#page_climaston_bonusage_2,#page_climaston_bonusage_3,#page_climaston_bonusage_4,#page_climaston_bonusage_5').css({x:'0px'});});
+$('.retour_4_1_bis').bind('touchstart',function(){$('#page_climaston_2').css({x:'-1024px'});$('#page_climaston_bonusage_1,#page_climaston_bonusage_2,#page_climaston_bonusage_3,#page_climaston_bonusage_4,#page_climaston_bonusage_5').css({x:'0px'});});
+
+//$('#retour_4_2').bind('touchstart',function(){$('#page_climaston_bonusage_1').css({x:'-1024px'});$(this).parent().css({x:'0px'});});
+//$('#retour_4_3').bind('touchstart',function(){$('#page_climaston_bonusage_2').css({x:'-1024px'});$(this).parent().css({x:'0px'});});
+//$('#retour_4_4').bind('touchstart',function(){$('#page_climaston_bonusage_3').css({x:'-1024px'});$(this).parent().css({x:'0px'});});
+//$('#retour_4_5').bind('touchstart',function(){$('#page_climaston_bonusage_4').css({x:'-1024px'});$(this).parent().css({x:'0px'});});
 
 $('.bt_retour_climaston_1').on('touchstart',function(){$('#page_climaston_1').css({x:'-1024px'});$('#page_climaston_backup_1').css({x:'0px'});});
 $('.bt_retour_climaston_2').on('touchstart',function(){$('#page_climaston_2').css({x:'-1024px'});$('#page_climaston_backup_2').css({x:'0px'});});
