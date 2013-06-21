@@ -24,18 +24,32 @@ $('#page_accueil_duphaston').swipe(
 $('#page_accueil_climaston').swipe(
 	{	
 	swipeLeft:function(event, direction, distance, duration, fingerCount) {$('#page_climaston_bonusage_1').css('background-image','url(./images/eadv_decoupe_Page_11_light.jpg)');$(this).css({x:'-2048px'});$('#page_climaston_1').css({x:'-1024px'});},
-	swipeRight:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'0px'});$('#page_menu').css({x:'-1024px'});},
+	swipeRight:function(event, direction, distance, duration, fingerCount) {
+  $('#page_duphaston_backup').css('background-image','url(./images/eadv_decoupe_Page_05_light.jpg)');
+  $('#page_duphaston_bonusage').css('background-image','url(./images/eadv_decoupe_Page_06_light.jpg)');  
+  $(this).css({x:'0px'});$('#page_duphaston_1').css({x:'-1024px'});},
 	threshold:0});
 
 $('#page_accueil_oesclim').swipe(
 	{
 		swipeLeft:function(event, direction, distance, duration, fingerCount) {$('#page_oesclim_bonusage_1').css('background-image','url(./images/eadv_decoupe_Page_19_light.jpg)');$(this).css({x:'-2048px'});$('#page_oesclim_1').css({x:'-1024px'});},
-		swipeRight:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'0px'});$('#page_menu').css({x:'-1024px'});},
+		swipeRight:function(event, direction, distance, duration, fingerCount) {  		      
+      $('#page_climaston_bonusage_1').css('background-image','url(./images/eadv_decoupe_Page_11_light.jpg)');      
+      $('#page_climaston_1').css('background-image','url(./images/eadv_decoupe_Page_08_light.jpg)');
+      $('#page_climaston_backup_1,#page_climaston_backup_2').css('background-image','url(./images/eadv_decoupe_Page_10_light.jpg)'); 
+      $(this).css({x:'0px'});$('#page_climaston_2').css({x:'-1024px'});},
 		threshold:0});
 
 $('#page_oesclim_1').swipe(
 	{		
-		swipeRight:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'0px'});$('#page_accueil_oesclim').css({x:'-1024px'});},
+		swipeLeft:function(event, direction, distance, duration, fingerCount) {	
+			 $('#page_oesclim_duphaston_1').css('background-image','url(./images/eadv_decoupe_Page_25_light.jpg)');
+	     $('#page_oesclim_duphaston_2').css('background-image','url(./images/eadv_decoupe_Page_26_light.jpg)');
+	     $(this).css({x:'-2048px'});$('#page_accueil_oesclim_duphaston').css({x:'-1024px'});},
+		swipeRight:function(event, direction, distance, duration, fingerCount) {			
+			$('#page_climaston_1').css('background-image','url(./images/eadv_decoupe_Page_08_light.jpg)');
+      $('#page_climaston_2').css('background-image','url(./images/eadv_decoupe_Page_09_light.jpg)');
+      $(this).css({x:'0px'});$('#page_accueil_oesclim').css({x:'-1024px'});},
 		threshold:0}
 	);
 
@@ -59,6 +73,11 @@ $('#page_oesclim_bonusage_3').swipe(
   	threshold:0});
 $('#page_duphaston_1').swipe(
   {
+  	swipeLeft:function(event, direction, distance, duration, fingerCount) {
+  		$('#page_climaston_1').css('background-image','url(./images/eadv_decoupe_Page_08_light.jpg)');
+      $('#page_climaston_2').css('background-image','url(./images/eadv_decoupe_Page_09_light.jpg)');
+      $('#page_climaston_backup_1,#page_climaston_backup_2').css('background-image','url(./images/eadv_decoupe_Page_10_light.jpg)'); 
+  		$(this).css({x:'-2048px'});$('#page_accueil_climaston').css({x:'-1024px'});},	
   	swipeRight:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'0px'});$('#page_accueil_duphaston').css({x:'-1024px'});},
   	threshold:0});  	
 $('#page_oesclim_bonusage_4').swipe(
@@ -71,7 +90,9 @@ $('#page_oesclim_bonusage_5').swipe({swipeRight:function(event, direction, dista
 $('#page_accueil_oesclim_duphaston').swipe(
  {
  	swipeLeft:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'-2048px'});$('#page_oesclim_duphaston_1').css({x:'-1024px'});},
-  swipeRight:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'0px'});$('#page_menu').css({x:'-1024px'});},
+  swipeRight:function(event, direction, distance, duration, fingerCount) {
+  	$('#page_oesclim_backup').css('background-image','url(./images/eadv_decoupe_Page_18_light.jpg)');
+  	$('#page_oesclim_bonusage_1').css('background-image','url(./images/eadv_decoupe_Page_19_light.jpg)');$(this).css({x:'0px'});$('#page_oesclim_1').css({x:'-1024px'});},
  	threshold:0});
 $('#page_oesclim_duphaston_1').swipe(
 	{
@@ -83,9 +104,20 @@ $('#page_oesclim_duphaston_2').swipe({swipeRight:function(event, direction, dist
 $('#page_climaston_1').swipe(
   {
   	swipeLeft:function(event, direction, distance, duration, fingerCount) {	$(this).css({x:'-2048px'});$('#page_climaston_2').css({x:'-1024px'});},
-  	swipeRight:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'0px'});$('#page_accueil_climaston').css({x:'-1024px'});},
+  	swipeRight:function(event, direction, distance, duration, fingerCount) {
+    $('#page_duphaston_1').css('background-image','url(./images/eadv_decoupe_Page_04_light.jpg)');
+    $('#page_duphaston_backup').css('background-image','url(./images/eadv_decoupe_Page_05_light.jpg)');
+    $('#page_duphaston_bonusage').css('background-image','url(./images/eadv_decoupe_Page_06_light.jpg)');   		
+  	$(this).css({x:'0px'});$('#page_accueil_climaston').css({x:'-1024px'});},
   	threshold:0});
-$('#page_climaston_2').swipe({swipeRight:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'0px'});$('#page_climaston_1').css({x:'-1024px'});},threshold:0});
+$('#page_climaston_2').swipe({
+	  swipeLeft:function(event, direction, distance, duration, fingerCount) {	
+	  		$('#page_oesclim_1').css('background-image','url(./images/eadv_decoupe_Page_17_light.jpg)');
+	      $('#page_oesclim_backup').css('background-image','url(./images/eadv_decoupe_Page_18_light.jpg)');
+	      $(this).css({x:'-2048px'});$('#page_accueil_oesclim').css({x:'-1024px'});},
+	  swipeRight:function(event, direction, distance, duration, fingerCount) {$(this).css({x:'0px'});$('#page_climaston_1').css({x:'-1024px'});},
+	  threshold:0
+	 });
 
 $('#page_climaston_bonusage_1').swipe({swipeLeft:function(event, direction, distance, duration, fingerCount) {
 	$('#page_climaston_bonusage_3').css('background-image','url(./images/eadv_decoupe_Page_13_light.jpg)');	
@@ -134,13 +166,15 @@ $('.bt_play').bind('touchend', function() {$(this).css('background-image',"url(.
 
 $('.bt_home').bind('touchstart', function() {$(this).css('background-image',"url(./images/home_on.png)");});
 $('.bt_home').bind('touchend', function() {$(this).css('background-image',"url(./images/home_off.png)");});
-$('.bt_home_first_level').bind('touchstart',function(){$(this).parent().css({x:'0px'});$('#page_menu').css({x:'-1024px'});});
-$('.bt_home_second_level_1').bind('touchstart',function(){$(this).parent().transition({x:'1024px'},function(){setTimeout(init_pos_pages, 600);});$('#page_menu').css({x:'-1024px'});});
-$('.bt_home_duphaston').bind('touchstart',function(){$('#page_accueil_duphaston').transition({x:'0px'},function(){$('#page_duphaston_1').css({x:'0px'});});$('#page_menu').css({x:'-1024px'});});
-$('.bt_home_oesclim').bind('touchstart',function(){$('#page_accueil_oesclim').transition({x:'0px'},function(){$('#page_oesclim_1').css({x:'0px'});});$('#page_menu').css({x:'-1024px'});});
-$('.bt_home_oesclim_duphaston').bind('touchstart',function(){$('#page_accueil_oesclim_duphaston').transition({x:'0px'},function(){$('#page_oesclim_duphaston_1').css({x:'0px'});});$('#page_menu').css({x:'-1024px'});});
-$('.bt_home_climaston_1').bind('touchstart',function(){$('#page_accueil_climaston').transition({x:'0px'},function(){$('#page_climaston_1').css({x:'0px'});});$('#page_menu').css({x:'-1024px'});});
-$('.bt_home_climaston_2').bind('touchstart',function(){$('#page_accueil_climaston').transition({x:'0px'},function(){$('#page_climaston_1,#page_climaston_2').css({x:'0px'});});$('#page_menu').css({x:'-1024px'});});
+$('.bt_home_first_level').bind('touchstart',function(){
+$('.page_slide').css({x:'0px'});
+$('#page_menu').css({x:'-1024px'});});
+
+$('.bt_home_duphaston').bind('touchstart',function(){$('.page_slide').css({x:'0px'});$('#page_menu').css({x:'-1024px'});});
+$('.bt_home_oesclim').bind('touchstart',function(){$('.page_slide').css({x:'0px'});$('#page_menu').css({x:'-1024px'});});
+$('.bt_home_oesclim_duphaston').bind('touchstart',function(){$('.page_slide').css({x:'0px'});$('#page_menu').css({x:'-1024px'});});
+$('.bt_home_climaston_1').bind('touchstart',function(){$('.page_slide').css({x:'0px'});$('#page_menu').css({x:'-1024px'});});
+$('.bt_home_climaston_2').bind('touchstart',function(){$('.page_slide').css({x:'0px'});$('#page_menu').css({x:'-1024px'});});
 
 
 $('#bt_menu_1').bind('touchstart',function(){
@@ -153,25 +187,30 @@ $('#bt_menu_1').bind('touchstart',function(){
 });
 
 $('#bt_menu_2').bind('touchstart',function(){
+  $('#page_duphaston_1').css('background-image','url(./images/eadv_decoupe_Page_04_light.jpg)');
   $('#page_climaston_1').css('background-image','url(./images/eadv_decoupe_Page_08_light.jpg)');
   $('#page_climaston_2').css('background-image','url(./images/eadv_decoupe_Page_09_light.jpg)');
   $('#page_climaston_backup_1,#page_climaston_backup_2').css('background-image','url(./images/eadv_decoupe_Page_10_light.jpg)'); 
-	$('#page_menu').css({x:'-2048px'});
+	$('#page_menu,#page_accueil_duphaston,#page_duphaston_1').css({x:'-2048px'});	
 	$('#page_accueil_climaston').css({x:'-1024px'});
+	
 });
 
 $('#bt_menu_3').bind('touchstart',function(){
+	
 	$('#page_oesclim_1').css('background-image','url(./images/eadv_decoupe_Page_17_light.jpg)');
 	$('#page_oesclim_backup').css('background-image','url(./images/eadv_decoupe_Page_18_light.jpg)');
-
-	$('#page_menu').css({x:'-2048px'});
+	$('#page_climaston_2').css('background-image','url(./images/eadv_decoupe_Page_09_light.jpg)');
+	      
+	$('#page_menu,#page_accueil_duphaston,#page_accueil_climaston,#page_duphaston_1,#page_climaston_1,#page_climaston_2').css({x:'-2048px'});	
 	$('#page_accueil_oesclim').css({x:'-1024px'});
 });
 
 $('#bt_menu_4').bind('touchstart',function(){
+	$('#page_oesclim_1').css('background-image','url(./images/eadv_decoupe_Page_17_light.jpg)');
 	$('#page_oesclim_duphaston_1').css('background-image','url(./images/eadv_decoupe_Page_25_light.jpg)');
 	$('#page_oesclim_duphaston_2').css('background-image','url(./images/eadv_decoupe_Page_26_light.jpg)');
-	$('#page_menu').css({x:'-2048px'});
+	$('#page_menu,#page_accueil_duphaston,#page_accueil_climaston,#page_duphaston_1,#page_climaston_1,#page_climaston_2,#page_accueil_oesclim,#page_oesclim_1').css({x:'-2048px'});	
 	$('#page_accueil_oesclim_duphaston').css({x:'-1024px'});
 });
 
@@ -198,7 +237,6 @@ $('#bt_bonusage_3').bind('touchstart',function(){
 
 $('#retour_2').bind('touchstart',function(){$('#page_duphaston_1').css({x:'-1024px'});$('#page_duphaston_bonusage').css({x:'+1024px'});});
 $('#retour_1').bind('touchstart',function(){$('#page_duphaston_1').css({x:'-1024px'});$('#page_duphaston_backup').css({x:'+1024px'});});
-$('#retour_3').bind('touchstart',function(){$('#page_6').transition({x:'-1024px'});$('#page_8').transition({x:'1024px'});});
 
 $('#retour_5').bind('touchstart',function(){$('#page_oesclim_1').css({x:'-1024px'});$('#page_oesclim_backup').css({x:'0px'});});
 
